@@ -38,7 +38,7 @@ const AddExpenseModal = ({ show, handleClose, defaultBudgetId }) => {
                         />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="amount">
-                        <Form.Label>Cantidad</Form.Label>
+                        <Form.Label>Importe</Form.Label>
                         <Form.Control
                             ref={amountRef}
                             type="number"
