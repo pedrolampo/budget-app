@@ -48,13 +48,13 @@ const BudgetCard = ({
                             className="ms-auto"
                             onClick={onAddExpenseClick}
                         >
-                            Add Expense
+                            Agregar Gasto
                         </Button>
                         <Button
                             onClick={onViewExpensesClick}
                             variant="outline-secondary"
                         >
-                            View Expenses
+                            Ver Gastos
                         </Button>
                     </Stack>
                 )}

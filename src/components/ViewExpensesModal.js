@@ -22,7 +22,7 @@ const ViewExpensesModal = ({ budgetId, handleClose }) => {
             <Modal.Header closeButton>
                 <Modal.Title>
                     <Stack direction="horizontal" gap="2">
-                        <div>Expenses - {budget?.name}</div>
+                        <div>Gastos - {budget?.name}</div>
                         {budgetId !== UNCATEGORIZED_BUDGET_ID && (
                             <Button
                                 variant="outline-danger"
@@ -31,7 +31,7 @@ const ViewExpensesModal = ({ budgetId, handleClose }) => {
                                     handleClose();
                                 }}
                             >
-                                Delete
+                                Eliminar
                             </Button>
                         )}
                     </Stack>

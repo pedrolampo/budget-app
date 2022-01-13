@@ -26,11 +26,11 @@ const AddExpenseModal = ({ show, handleClose, defaultBudgetId }) => {
         <Modal show={show} onHide={handleClose}>
             <Form onSubmit={handleSubmit}>
                 <Modal.Header closeButton>
-                    <Modal.Title>New Expense</Modal.Title>
+                    <Modal.Title>Nuevo Gasto</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Group className="mb-3" controlId="description">
-                        <Form.Label>Description</Form.Label>
+                        <Form.Label>Descripción</Form.Label>
                         <Form.Control
                             ref={descriptionRef}
                             type="text"
@@ -38,7 +38,7 @@ const AddExpenseModal = ({ show, handleClose, defaultBudgetId }) => {
                         />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="amount">
-                        <Form.Label>Amount</Form.Label>
+                        <Form.Label>Cantidad</Form.Label>
                         <Form.Control
                             ref={amountRef}
                             type="number"
@@ -48,13 +48,13 @@ const AddExpenseModal = ({ show, handleClose, defaultBudgetId }) => {
                         />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="budgetId">
-                        <Form.Label>Budget</Form.Label>
+                        <Form.Label>Presupuesto</Form.Label>
                         <Form.Select
                             defaultValue={defaultBudgetId}
                             ref={budgetIdRef}
                         >
                             <option id={UNCATEGORIZED_BUDGET_ID}>
-                                Uncategorized
+                                Sin Categorizar
                             </option>
                             {budgets.map((budget) => (
                                 <option key={budget.id} value={budget.id}>
@@ -65,7 +65,7 @@ const AddExpenseModal = ({ show, handleClose, defaultBudgetId }) => {
                     </Form.Group>
                     <div className="d-flex justify-content-end">
                         <Button variant="primary" type="submit">
-                            Add
+                            Agregar
                         </Button>
                     </div>
                 </Modal.Body>
