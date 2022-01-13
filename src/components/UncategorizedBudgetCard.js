@@ -11,6 +11,8 @@ const UncategorizedBudgetCard = (props) => {
         0
     );
 
+    if (amount === 0) return null;
+
     return <BudgetCard amount={amount} name="Uncategorized" gray {...props} />;
 };
 
